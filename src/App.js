@@ -1,15 +1,33 @@
 import React from "react";
-import NavBar from "./components/navbar";
-import Body from "./components/body/body";
-import Footer from "./components/footer";
+import Navbar from "./components/navbar/navbar";
+import Carousel from "./components/carousel/carousel";
+import About from "./components/About/About";
+import Events from "./components/Events/Events";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
+
+      <div id="home">
+      <Carousel />
+      </div>
      
- <NavBar />
-   <Body />
-   <Footer />
+
+      <div id="about">
+        <About />
+        </div>
+
+        <div id="events">
+        <Events />
+        </div>
+        
+        <div id="contact">
+        <Footer />
+        </div>
+       
+      
     </div>
   );
 }

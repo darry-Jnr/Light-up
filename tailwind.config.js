@@ -9,6 +9,7 @@ module.exports = {
         searchcolor: '#ebf5f5',
         logincolor: '#20d8da'
       },
+      scrollBehavior: ['smooth'],
     },
   },
   variants: {
