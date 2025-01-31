@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12" id='contact'>
+    <footer className="bg-gray-900 text-white py-12" id="contact">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 className="text-2xl font-bold mb-4">Salvation</h3>
@@ -31,10 +32,15 @@ const Footer = () => {
         <div>
           <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            <li><a href="#home" className="hover:text-white text-gray-400 no-underline">Home</a></li>
-            <li><a href="#about" className="hover:text-white text-gray-400 no-underline">About</a></li>
-            <li><a href="#events" className="hover:text-white text-gray-400 no-underline">Events</a></li>
-            <li><a href="#contact" className="hover:text-white text-gray-400 no-underline">Contact</a></li>
+            <li>
+              <Link to="/" className="no-underline text-lg hover:text-xl text-blue-400">Home</Link>
+            </li>
+            <li>
+              <Link to="/Mainabout" className="no-underline text-lg text-white">About</Link>
+            </li>
+            <li>
+              <Link to="/sermon" className="no-underline text-lg text-white">Sermon</Link>
+            </li>
           </ul>
         </div>
 

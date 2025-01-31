@@ -41,6 +41,7 @@ const Navbar = () => {
           <li><a href="#about" className="no-underline text-lg hover:text-gray-400 transition-colors">About</a></li>
           <li><a href="#events" className="no-underline text-lg hover:text-gray-400 transition-colors">Events</a></li>
           <li><a href="#contact" className="no-underline text-lg hover:text-gray-400 transition-colors">Contact</a></li>
+          <button type="button" className="py-2 px-4 bg-gray-800 text-white rounded-md hover:bg-gray-700">Donate</button>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -57,6 +58,7 @@ const Navbar = () => {
         <a href="#about" className='block no-underline py-2'>About</a>
         <a href="#events" className='block no-underline py-2'>Events</a>
         <a href="#contact" className='block no-underline py-2'>Contact</a>
+        <button type="button" className="py-2 px-4 bg-gray-800 text-white rounded-md hover:bg-gray-700">Donate</button>
       </div>
       
     </nav>
