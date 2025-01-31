@@ -8,7 +8,7 @@ const Nav = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div className="fixed top-0 left-0 w-screen bg-white shadow-md z-50 overflow-x-hidden">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="logo" className="w-14 h-14 sm:w-12 sm:h-12 md:w-16 md:h-16" />
@@ -43,7 +43,7 @@ const Nav = () => {
 
       {menuOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setMenuOpen(false)}></div>}
 
-      <div className={`fixed top-0 left-0 h-full w-60 bg-white shadow-lg transform ${menuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out z-50`}>
+      <div className={`fixed top-0 left-0 h-full w-60 max-w-[100vw] bg-white shadow-lg transform ${menuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out z-50 overflow-x-hidden`}>
         <div className="p-5">
           <button className="text-xl text-gray-700 mb-4" onClick={() => setMenuOpen(false)}>
             <FaTimes />
